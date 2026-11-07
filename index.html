@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
+  <title>John Wick Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <canvas id="matrix-rain" aria-hidden="true"></canvas>
+
   <main class="calculator">
+
+    <div class="screen-header">
+      <span>&gt; SECURE_CALC</span>
+      <span class="status">● ONLINE</span>
+    </div>
 
     <div class="display" id="display" aria-live="polite">0</div>
 
@@ -42,6 +54,7 @@
 
   </main>
 
+  <script src="rain.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
